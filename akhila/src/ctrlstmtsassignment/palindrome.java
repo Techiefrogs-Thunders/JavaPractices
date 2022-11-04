@@ -1,15 +1,18 @@
-public class Palindrome {
-    void palindeome()
+package ctrlstmtsassignment;
+
+public class palindrome {
+    int a=12321;
+    void meth1()
     {
-        int a=12321,r,rev=0,temp;
+        int temp;
+        int rev=0;
         temp=a;
         while(a>0)
         {
-            r=a%10;
-            rev=rev*10+r;
+            rev=rev*10+a%10;
             a=a/10;
         }
-        if(temp==rev)
+        if(rev==temp)
         {
         System.out.println("It's a palindrome");
         }
@@ -18,6 +21,6 @@ public class Palindrome {
         }
     }
     public static void main(String[] args) {
-        new Palindrome().palindeome();
+        new palindrome().meth1();
     }
 }
