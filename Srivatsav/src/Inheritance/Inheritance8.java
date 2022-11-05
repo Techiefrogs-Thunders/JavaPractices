@@ -12,10 +12,10 @@ class ClassA{
     } 
 }
 
-class ClassB{
+class ClassB extends ClassA{
     int k;
     ClassB(int k){
-        super();
+        super(k, k);
         this.k = k;   
     }
     
