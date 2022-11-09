@@ -4,7 +4,7 @@ public class Array01 {
             {1, 5, 3},
             {8, 4, 2, 7, 1, 5, 6},
             {4, 6, 2},
-            {},
+            {0},
             {5, 7}
         };
         System.out.println(arr.length);
