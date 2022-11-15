@@ -1,7 +1,6 @@
 package Inheritanceassignment;
 
-public class Mainclass  {
-    
+public class SubChildclass {
     public static void main(String[] args) {
     
         Parentclass parent=new Childclass();
@@ -9,7 +8,7 @@ public class Mainclass  {
         parent.meth1();
         child.meth2();
         child.meth1();
-    }    
+    } 
 }
 class Childclass extends Parentclass{
     void meth2()
@@ -19,7 +18,7 @@ class Childclass extends Parentclass{
 }
 class Parentclass
 {
-    void meth1()
+    private void meth1()
     {
         System.out.println("This is parent class");
     }
