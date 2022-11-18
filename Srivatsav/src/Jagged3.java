@@ -7,7 +7,9 @@ public class Jagged3 {
         int rowSiz = sc.nextInt();
 
         int a[][] = new int[rowSiz][];
-
+        //a = new int[2][2];
+        //a ={{1,2},{3,4}};
+        //int b[][] = {{1,2},{3,4,5}};
         for (int i = 0; i < rowSiz; i++) {
             System.out.println("Enter Column Size:");
             int columnSiz = sc.nextInt();
