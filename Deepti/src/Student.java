@@ -1,4 +1,4 @@
-public class Student {
+
   
 
 //Creating Student class.  
@@ -14,4 +14,4 @@ class Student{
      System.out.println(s1.name);  
     }  
    }  
-}
+

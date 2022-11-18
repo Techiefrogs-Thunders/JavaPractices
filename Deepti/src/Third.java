@@ -30,7 +30,7 @@ class Member{
       e.salary = 1231;
       e.specialization = "xyzxyz";
   
-      Manager m = new Manager();
+      Manager M = new Manager();
       
     }
   }									
