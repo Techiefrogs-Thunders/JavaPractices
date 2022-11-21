@@ -1,4 +1,4 @@
-public public class Test
+public class Test
 {
     static int x = 11;
     private int y = 33;
@@ -19,6 +19,6 @@ public public class Test
         Test t = new Test();
         t.method1(5);
     }
-} {
+
     
 }
