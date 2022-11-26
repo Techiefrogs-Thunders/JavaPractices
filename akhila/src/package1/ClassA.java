@@ -1,6 +1,6 @@
 package package1;
 public class ClassA{
-     void display()
+     public void display()
      {
         System.out.println("display method from pack1");
      }

@@ -1,6 +1,6 @@
 package stringsassignment;
 
-public class Iterate1 {
+public class Separate {
     public static void main(String[] args) {
         String str="I am akhila kakarla";
         System.out.println(str.toUpperCase());

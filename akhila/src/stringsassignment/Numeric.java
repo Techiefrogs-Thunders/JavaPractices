@@ -14,6 +14,6 @@ public class Numeric {
     
     public static void main(String[] args) {
         //Numeric n=new Numeric();
-        System.out.println(numeric("1gfjjhgjhjyf2"));
+        System.out.println(numeric("6467676"));
     }
 }
