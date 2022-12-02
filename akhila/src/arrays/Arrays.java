@@ -14,7 +14,7 @@ public class Arrays {
         System.out.println(arr2[arr3.length-1]);
         for(int i=0;i<=arr3.length-1;i++)
         {
-            System.out.println(arr3[i]);;
+            System.out.println(arr3[i]);
         }
     }
         public static void main(String[] args) {

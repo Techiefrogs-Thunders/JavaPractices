@@ -12,9 +12,9 @@ public class Strings
         String a="Akhila";
         String b=new String("akhila");
         String c="  Akhila ";
-        StringBuilder a1=new StringBuilder("Hello");
-        StringBuilder b1=new StringBuilder("World");
-        StringBuilder c1=a1.append(b1);
+        String a1="Hello";
+        String b1="World";
+        Strings c1=a1.append(b1);
         String d=String.format("%s%s",a,b);
         String e=String.join("",a,b);
         Strings str=new Strings();
