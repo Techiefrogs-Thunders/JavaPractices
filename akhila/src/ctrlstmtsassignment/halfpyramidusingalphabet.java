@@ -10,7 +10,8 @@ public class halfpyramidusingalphabet {
         {
             for(j=0;j<i;j++)
             {
-                System.out.print((char)(alphabet+(j))+" ");
+                System.out.print((char)(alphabet+(i-1))+" ");// a b b c c c d d d d
+                //System.out.println((char)(alphabet+(j))+" ");//a a b a b c a b c d
             }
             System.out.println(" ");
         }
