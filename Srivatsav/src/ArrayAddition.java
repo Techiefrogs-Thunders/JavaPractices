@@ -38,12 +38,12 @@ public class ArrayAddition {
                 result[row][column] = a[row][column]+b[row][column];
             }
         }
-        // for (int row = 0; row < rowSize; row++) {
-        //     for (int column = 0; column < a[row].length; column++) {
-        //         System.out.println(result[row][column]+" ");
-        //     }
-        //     System.out.println();
-        // }
+        for (int row = 0; row < rowSize; row++) {
+            for (int column = 0; column < a[row].length; column++) {
+                System.out.println(result[row][column]+" ");
+            }
+            System.out.println();
+        }
         System.out.println(Arrays.deepToString(result));
 
     }
