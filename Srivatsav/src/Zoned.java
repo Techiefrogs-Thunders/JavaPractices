@@ -1,6 +1,7 @@
 import java.time.*;
 import java.time.format.TextStyle;
 import java.util.Locale;
+import java.util.TimeZone;
 
 public class Zoned {
     public static void main(String[] args) {
@@ -18,6 +19,9 @@ public class Zoned {
         System.out.println(id1.isAfter(id2));
         ZoneOffset zone2 = ZoneOffset.ofHours(7);  
         System.out.println(zone2);
+        TimeZone zone3 = TimeZone.getDefault();  
+        String name = zone3.getDisplayName();         
+        System.out.println("Local time zone: "+ name);
     }
     
 }
