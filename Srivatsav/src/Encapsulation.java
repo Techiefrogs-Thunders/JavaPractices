@@ -34,6 +34,6 @@ public class Encapsulation {
     encap.setAge(20);
     encap.setIdNum("1234321");
  
-    System.out.print("Name : " + encap.getName() + " Age : " + encap.getAge());
+    System.out.print("Name : " + encap.getAge() + " Age : " + encap.getAge());
   }
 }
