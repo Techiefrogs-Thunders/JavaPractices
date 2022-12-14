@@ -14,14 +14,14 @@ public class Strings
         String c="  Akhila ";
         String a1="Hello";
         String b1="World";
-        Strings c1=a1.append(b1);
+        //Strings c1=a1.append(b1);
         String d=String.format("%s%s",a,b);
         String e=String.join("",a,b);
         Strings str=new Strings();
         str.stringtraverse();
         System.out.println(e.toString());
         System.out.println(d.toString());
-        System.out.println(c1.toString());
+        //System.out.println(c1.toString());
         System.out.println(a==b);
         System.out.println(a.equals(b));
         System.out.println(a.equalsIgnoreCase(b));
