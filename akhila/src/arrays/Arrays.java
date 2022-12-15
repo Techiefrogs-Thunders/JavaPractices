@@ -1,5 +1,7 @@
 package arrays;
 
+import java.util.List;
+
 public class Arrays {
     void meth1()
     {
@@ -19,5 +21,8 @@ public class Arrays {
     }
         public static void main(String[] args) {
             new Arrays().meth1();
+        }
+        public static List<Integer> asList(int i, int j, int k, int l, int m, int n) {
+            return null;
         }
 }
