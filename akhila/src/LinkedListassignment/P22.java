@@ -14,5 +14,7 @@ public class P22 {
         else{
             System.out.println("One is not present");
         }
+        System.out.println();
+
     }
 }
