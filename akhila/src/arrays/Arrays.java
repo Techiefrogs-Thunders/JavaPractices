@@ -25,4 +25,10 @@ public class Arrays {
         public static List<Integer> asList(int i, int j, int k, int l, int m, int n) {
             return null;
         }
+        public static String[] copyof(Object[] objArray, int length, Class<String[]> class1) {
+            return null;
+        }
+        public static String toString(String[] array) {
+            return null;
+        }
 }
