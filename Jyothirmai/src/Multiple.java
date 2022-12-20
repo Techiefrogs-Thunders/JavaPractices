@@ -15,6 +15,7 @@ class Animal implements AnimalEat,AnimalTravel{
     @Override
     public void travel(){
         System.out.println("Animal is travelling");
+        System.out.println("Akhila is an animal");
         //akhila changes
         System.out.println("Dealing with 2 animals");
         System.out.println("my stub");
