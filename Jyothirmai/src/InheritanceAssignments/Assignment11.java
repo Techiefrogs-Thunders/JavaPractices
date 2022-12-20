@@ -2,7 +2,16 @@ package InheritanceAssignments;
 
 public class Assignment11 {
     public static void main(String[] args) {
-        
+        Cylinder cy=new Cylinder();
+        new Cylinder(45);
+        new Cylinder(45,2);
+        new Cylinder(45,3,"blue");
+        Circle c=new Circle();
+        new Circle(4);
+        new Circle(4,"blue");
+        System.out.println(cy.getArea());
+        System.out.println(cy.toString());
+        System.out.println(cy.getVolume());
     }
 }
 class Circle{
@@ -19,6 +28,12 @@ class Circle{
     }
     public void setColour(String colour) {
         this.colour = colour;
+    }
+    double getArea(){
+        return (radius*radius*Math.PI);
+    }
+    public String toString(){
+        return "It's a circle";
     }
     Circle(){
         System.out.println("In Circle constructor");
@@ -44,6 +59,9 @@ class Cylinder extends Circle {
 
     public void setHeight(double height) {
         this.height = height;
+    }
+    double getVolume(){
+        return (getArea()*height);
     }
     Cylinder(){
         System.out.println("In cylinder constructor");
