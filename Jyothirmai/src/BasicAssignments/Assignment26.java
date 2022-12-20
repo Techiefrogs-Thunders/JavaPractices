@@ -6,9 +6,8 @@ public class Assignment26 {
 
     for(int i = 1; i <= 4; i++) {
 
-      for(int j = 1; j <= i; j++) {
+      for(int j = 1; j <= i; j++,++number) {
         System.out.print(number + " ");
-        ++number;
       }
 
       System.out.println();

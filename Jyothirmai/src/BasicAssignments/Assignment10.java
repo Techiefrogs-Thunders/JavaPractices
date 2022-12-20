@@ -8,7 +8,7 @@ public class Assignment10 {
         while(i<=10){
         num = i *a;
        
-        System.out.println(a + "*" + i + "=" + num);
+        System.out.println(a + " * " + i + " = " + num);
         i++;
         }
         

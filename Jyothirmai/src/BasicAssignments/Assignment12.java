@@ -5,8 +5,7 @@ public class Assignment12 {
         int a = 10;
         int b = 20;
         int gcd = 1;
-        int i = 1;
-        for(i=1;i<=a&&i<=b;++i){
+        for(int i=1;i<=a&&i<=b;++i){
             if(a%i==0&&b%i==0)
             gcd = i;
         }
