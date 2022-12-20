@@ -1,14 +1,16 @@
+import javax.swing.plaf.synth.SynthLookAndFeel;
+
 public class Example {
+    int a = 5;
+        int b = 7;
     public static void main(String[] args) {
-        int a = 4875;
-        int b = 94875;
-        int c = a+b;
-        System.out.println(c);
+        
         Example obj1 = new Example();
-        obj1.obj();
+        obj1.display();
 
     }
-    void obj(){
+    void display(){
         System.out.println("In method");
+        System.out.println(a+b);
     }
 }
