@@ -25,6 +25,6 @@ class Animal implements AnimalEat,AnimalTravel
     public void eat() {
         // TODO Auto-generated method stub
         System.out.println("Animal is eating");
-        System.out.println("It is eating");
+        
     }
 }
