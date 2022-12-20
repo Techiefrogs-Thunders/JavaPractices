@@ -5,9 +5,9 @@ public class SubChildclass {
     
         Parentclass parent=new Childclass();
         Childclass child=new Childclass();
-        parent.meth1();
+        //parent.meth1();
         child.meth2();
-        child.meth1();
+        //child.meth1();
     } 
 }
 class Childclass extends Parentclass{
