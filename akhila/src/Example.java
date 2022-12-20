@@ -8,6 +8,7 @@ public class Example {
     void display(){
         System.out.println("In display() method");
         System.out.println(a+b);
+        
         System.out.println(a-b);
     }
 }
