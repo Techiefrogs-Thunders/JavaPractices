@@ -10,7 +10,7 @@ public class ParentClass extends GrandParentClass{
     private int j = 400;
 
     ParentClass(){
-       // super();
+       super();
         System.out.println("in parent constructor");
     }
     public static void main(String[] args) {
