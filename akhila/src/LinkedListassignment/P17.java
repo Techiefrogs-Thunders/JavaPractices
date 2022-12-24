@@ -14,7 +14,11 @@ public class P17 {
         ll2.add(7);
         ll2.add(8);
         System.out.println(ll2);
-        Collections.In
+        LinkedList<Integer> ll3=new LinkedList<Integer>();
+        ll3.addAll(ll1);
+        ll3.addAll(ll2);
+        System.out.println(ll3);
+        
 
     }
 }

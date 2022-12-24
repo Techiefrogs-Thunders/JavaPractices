@@ -1,71 +1,96 @@
 package LinkedListassignment;
-
+import java.util.*;
 public class PP1 {
-    public static class Node1{
-        Node1 next;
-        int data;
+    Node head;
+    public void addToTheLase(Node node){
+        if(head==null){
+            head=node;
+        }
+        else{
+            Node temp=head;
+            while(temp.next!=null){
+                temp=temp.next;
+                temp.next=node;
+            }
+        }
     }
-    public static class Node2{
-        int data;
-        Node2 next;
-    }
-    public static class Node3{
-        Node3 next;
-        int data;
+    void printList(){
+        Node temp=head;
+        while(temp!=null){
+            System.out.print(temp.data+" ");
+            temp=temp.next;
+        }
+        System.out.println();
     }
     public static void main(String[] args) {
-        Node1 nn11=new Node1();
-        Node1 nn12=new Node1();
-        Node1 nn13=new Node1();
-        nn11.data=1;
-        nn12.data=2;
-        nn13.data=4;
-        Node2 nn1=new Node2();
-        Node2 nn2=new Node2();
-        Node2 nn3=new Node2();
-        nn1.data=1;
-        nn2.data=3;
-        nn3.data=4;
-        Node3 n31=new Node3();
-        Node3 n32=new Node3();
-        Node3 n33=new Node3();
-        Node3 n34=new Node3();
-        Node3 n35=new Node3();
-        Node3 n36=new Node3();
-        nn11.next=nn12;
-        nn12.next=nn13;
-        nn13.next=null;
-
-        nn1.next=nn2;
-        nn2.next=nn3;
-        nn3.next=null;
-
-        n31.next=n32;
-        n32.next=n33;
-        n33.next=n34;
-        n34.next=n35;
-        n35.next=n36;
-        n36.next=null;
-        Node1 cn1=nn11;
-        Node2 cn2=nn1;
-        Node3 cn3=n31;
-        while(cn3.next!=null){
-            if(cn1.data>cn2.data){
-                cn3.data=cn2.data;
-                cn2=cn2.next;
-                cn3=cn3.next;
+        PP1 llist1 = new PP1();
+        PP1 llist2 = new PP1();
+ 
+        // Node head1 = new Node(5);
+        llist1.addToTheLase(new Node(5));
+        llist1.addToTheLase(new Node(10));
+        llist1.addToTheLase(new Node(15));
+ 
+        // Node head2 = new Node(2);
+        llist2.addToTheLase(new Node(2));
+        llist2.addToTheLase(new Node(3));
+        llist2.addToTheLase(new Node(20));
+ 
+        llist1.head = new Gfg().sortedMerge(llist1.head,
+                                            llist2.head);
+        System.out.println("Merged Linked List is:");
+        llist1.printList();
+    }
+}
+class Node{
+    int data;
+    Node next;
+    Node(int d){
+        data=d;
+        next=null;
+    }
+}
+class Gfg{
+    Node sortedMerge(Node headA, Node headB)
+    {
+ 
+        /* a dummy first node to
+           hang the result on */
+        Node dummyNode = new Node(0);
+ 
+        /* tail points to the
+        last result node */
+        Node tail = dummyNode;
+        while (true) {
+ 
+            /* if either list runs out,
+            use the other list */
+            if (headA == null) {
+                tail.next = headB;
+                break;
             }
-            else if(cn1.data<cn2.data){
-                cn3.data=cn1.data;
-                cn1=cn1.next;
-                cn3=cn3.next;
+            if (headB == null) {
+                tail.next = headA;
+                break;
             }
+ 
+            /* Compare the data of the two
+            lists whichever lists' data is
+            smaller, append it into tail and
+            advance the head to the next Node
+            */
+            if (headA.data <= headB.data) {
+                tail.next = headA;
+                headA = headA.next;
+            }
+            else {
+                tail.next = headB;
+                headB = headB.next;
+            }
+ 
+            /* Advance the tail */
+            tail = tail.next;
         }
-        Node3 cn=n31;
-        System.out.println("The merged list is ");
-        for(int i=1;i<=6;i++){
-            System.out.println(cn.data+" ");
-            cn=cn.next;
-        }
+        return dummyNode.next;
     }
 }
