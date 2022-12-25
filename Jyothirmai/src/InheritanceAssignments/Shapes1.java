@@ -1,14 +1,7 @@
 package InheritanceAssignments;
 
 public class Shapes1 {
-    public static void main(String[] args) {
-        Square sq=new Square();
-        Circle c=new Circle();
-        sq.display3();
-        c.display2();
-        sq.display1();
-        sq.display();
-    }
+    
 }
 class Shape{
     void display(){
@@ -31,5 +24,10 @@ class Square extends Rectangle{
     void display3(){
         System.out.println("Square is a rectangle");
     }
-
+    public static void main(String[] args) {
+        Square sq=new Square();
+        sq.display3();
+        sq.display1();
+        sq.display();
+    }
 }
