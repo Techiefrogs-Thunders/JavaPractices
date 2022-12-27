@@ -12,6 +12,7 @@ public class Assignment7 {
         square.getPerimeter();
         System.out.println(circle.toString());
         System.out.println(circle.getRadius());
+        System.out.println(square.toString());
 
     }
 }
