@@ -13,7 +13,7 @@ public class PrivateAccessModifier {
     }
 
     public static void main(String[] args) {
-        int i = 20;
+        //int i = 20;
         PrivateAccessModifier pObj = new PrivateAccessModifier();
         pObj.display();
         System.out.println(pObj.k+"  "+pObj.l);

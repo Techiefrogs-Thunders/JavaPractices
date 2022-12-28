@@ -9,5 +9,6 @@ public class ScannerDemo {
         int i = scannerObj.nextInt();
 
         System.out.println("My input value is "+i);
+        scannerObj.close();
     }
 }
