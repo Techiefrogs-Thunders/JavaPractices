@@ -12,7 +12,7 @@ public class MethodDemo {
         System.out.println("user defined");
     }
 
-    static int sum(){
+    int sum(){
         return 5+10;
     }
     String myMethod(){

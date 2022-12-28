@@ -7,7 +7,7 @@ public class ClassInstanceDemo {
             System.out.println("Hi i am in constructor");
         }
     public static void main(String[] args) {
-        int a = 20;
+        //int a = 20;
         ClassInstanceDemo classObject = new ClassInstanceDemo();
         classObject.str = "Team";
         ClassInstanceDemo cObj1 = new ClassInstanceDemo();

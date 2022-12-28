@@ -21,7 +21,7 @@ public class OperatorsDemo {
         System.out.println("a value = "+a);
         System.out.println(~b);
 
-        boolean b1 = false;
+        //boolean b1 = false;
 
         //System.out.println(!b1);
         System.out.println(a++ + ++a);
@@ -60,8 +60,8 @@ public class OperatorsDemo {
         a += 10;
         b -= 5;
 
-        short k = 10;
-        short l = 20;
+        //short k = 10;
+        //short l = 20;
         short m = 10 + 20;
        // m = (short)(k + l);
         System.out.println(m);

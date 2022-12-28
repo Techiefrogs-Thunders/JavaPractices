@@ -7,7 +7,7 @@ public class ParentClass extends GrandParentClass{
     void display(){
         System.out.println("in parent display method");
     }
-    private int j = 400;
+    //private int j = 400;
 
     ParentClass(){
        super();

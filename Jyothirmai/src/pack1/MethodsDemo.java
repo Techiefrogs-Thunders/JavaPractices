@@ -10,8 +10,9 @@ public class MethodsDemo {
         int b=obj.nextInt();
         int c=a+b;
         System.out.println("Sum is: "+c);
-        int sum=add(3,4);
+        //int sum=add(3,4);
         welcome();
+        obj.close();
     }
     public static void welcome(){
         System.out.println("Welcome");

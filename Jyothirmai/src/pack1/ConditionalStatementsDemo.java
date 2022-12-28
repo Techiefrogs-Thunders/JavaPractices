@@ -1,7 +1,5 @@
 package pack1;
 
-import javax.lang.model.util.ElementScanner14;
-
 public class ConditionalStatementsDemo {
     public static void main(String[] args) {
         int age = 15;
