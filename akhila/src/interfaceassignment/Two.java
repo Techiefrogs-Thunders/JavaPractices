@@ -1,5 +1,4 @@
 package interfaceassignment;
-
 public class Two {
     public static double average(Employee[] objects){
         double average;
