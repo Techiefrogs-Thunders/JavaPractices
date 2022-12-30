@@ -2,12 +2,12 @@ package MethodsAssignment;
 
 public class Parentclass {
     public static void main(String[] args) {
-        Parent obj = new Parent();
-        Child Obj1 = new Parent();
-        Child obj2 = new Child(); 
-        obj.parent();
-        Obj1.child();
-        obj2.child();
+        new Parent();
+        new Parent();
+        new Child(); 
+        Parent.parent();
+        Child.child();
+        Child.child();
 
         
     }

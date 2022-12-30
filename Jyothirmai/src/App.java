@@ -15,10 +15,10 @@ public class App {
         App obj = new App();
         a.display();
         a.data = 200;
-        a.mydata = 700;
+        App.mydata = 700;
         System.out.println(App.mydata);
         obj.data = 500;
-        obj.mydata = 300;
+        App.mydata = 300;
         System.out.println(a.data +" "+data);
         //App.mydata = 200;
         System.out.println(App.mydata);

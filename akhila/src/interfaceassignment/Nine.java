@@ -24,7 +24,7 @@ class Signs{
     {
         
         System.out.println("color:");
-        sc.nextLine();
+        //sc.nextLine();
         color=sc.nextLine();
         System.out.println("text: ");
         text=sc.nextLine();

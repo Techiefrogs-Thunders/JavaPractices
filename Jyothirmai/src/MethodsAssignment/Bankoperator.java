@@ -14,21 +14,21 @@ public class Bankoperator {
         System.out.println("SBI interest rate is: "+sbiInt);
         int iciciWL = icici.setWithdrawalLimit();
         System.out.println("ICICI withdraw limit is: "+iciciWL);
-        
+        customer.customer();
     }
 }
 class Customer{
     void customer(){
         Scanner sc = new Scanner(System.in);
-        String name = sc.nextLine();
-        String address = sc.nextLine();
-        int age = sc.nextInt();
+        sc.nextLine();
+        sc.nextLine();
+        sc.nextInt();
+        sc.close();
     }
 
 }
 class Account {
     void account(){
-        String accaType,branchType;
     }
 
 }
@@ -41,6 +41,7 @@ class RBI {
         Scanner sc = new Scanner(System.in);
         String acctype = sc.nextLine();
         String branchtype = sc.nextLine();
+        sc.close();
         if(acctype=="SAVINGS" && branchtype=="METRO"){
             withlimit = 5000;
         } 

@@ -6,7 +6,7 @@ public class Assignment11 {
         new Cylinder(45);
         new Cylinder(45,2);
         new Cylinder(45,3,"blue");
-        Circle c=new Circle();
+        new Circle();
         new Circle(4);
         new Circle(4,"blue");
         System.out.println(cy.getArea());

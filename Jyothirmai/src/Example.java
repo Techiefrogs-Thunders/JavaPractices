@@ -1,4 +1,3 @@
-import javax.swing.plaf.synth.SynthLookAndFeel;
 
 public class Example {
     int a = 5;
