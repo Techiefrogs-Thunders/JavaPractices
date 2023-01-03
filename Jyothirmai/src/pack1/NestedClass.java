@@ -34,12 +34,12 @@ public class NestedClass {
         Myinnerclass(){
             System.out.println("In inner constructor");
         }
-    }
-    public static void main(String[] args) {
+
+        public static void main(String[] args) {
         NestedClass Oobj = new NestedClass();
         Myinnerclass Iobj = Oobj.new Myinnerclass();
         Iobj.innerdisplay();
         System.out.println(Iobj.k);
-        System.out.println(Oobj.i);
+        }
     }
 }

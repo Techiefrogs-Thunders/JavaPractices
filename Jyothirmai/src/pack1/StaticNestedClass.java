@@ -4,6 +4,11 @@ public class StaticNestedClass {
     int i;
     String name;
     static int j;
+    class nestedclass{
+        public static void main(String[] args) {
+            
+        }
+    }
     void display(){
         System.out.println("In display");
     }
