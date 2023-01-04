@@ -1,4 +1,4 @@
-package Collectionframe;
+
 import java.util.*;
 //to print list
 public class Lists1 {

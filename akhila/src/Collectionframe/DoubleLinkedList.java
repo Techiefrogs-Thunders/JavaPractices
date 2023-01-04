@@ -1,4 +1,3 @@
-package Collectionframe;
 
 public class DoubleLinkedList {
     class Node{

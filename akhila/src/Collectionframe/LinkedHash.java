@@ -1,4 +1,4 @@
-package Collectionframe;
+
 import java.util.*;
 public class LinkedHash {
     public static void main(String[] args) {
@@ -15,3 +15,9 @@ public class LinkedHash {
 
     }
 }
+//LinkedHashSet clas is a Hashtable and LinkedList implementation of the Set interface
+//inherits the HashSet class and implements the Set interface.
+//contains only unique elements
+//provides all optionalset operatns and permits null elements
+//non-synchronized
+//maintains insertion order

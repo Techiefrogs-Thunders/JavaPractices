@@ -1,4 +1,4 @@
-package Collectionframe;
+
 
 public class LinkedList3 {
     class Node{
