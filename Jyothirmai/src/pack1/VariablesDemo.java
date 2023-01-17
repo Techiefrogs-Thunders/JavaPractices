@@ -9,10 +9,10 @@ public class VariablesDemo {
     static double d;
     static char ch;
     public static void main(String[] args) {
-        b1 = 127;
+        i = 130;
+        b1 = (byte)i;
         boolean b = true;
         s1 = 32000;
-        i = 394576;
         l = 3945868376529835l;
         f = 100.10f;
         d = 2348.765;
