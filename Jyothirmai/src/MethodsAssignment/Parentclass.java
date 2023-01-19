@@ -12,7 +12,7 @@ public class Parentclass {
         
     }
 }
-class Parent extends Child {
+class Parent {
     static void parent(){
         System.out.println("In Parent Class");
     }

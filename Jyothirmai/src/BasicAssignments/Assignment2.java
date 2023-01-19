@@ -8,6 +8,6 @@ public class Assignment2 {
         temp = a;
         a = b;
         b = temp;
-        System.out.println("after swapping thr values of a and b are:" +a +" and " +b ); 
+        System.out.println("after swapping the values of a and b are:" +a +" and " +b ); 
     }
 }

@@ -8,9 +8,9 @@ public class Assignment3 {
         
     }
     void area(int l,int b){
-        System.out.println(l*b);
+        System.out.println("area of rectangle is : " + l*b);
     }
     void area(int a){
-        System.out.println(a*a);
+        System.out.println("area of square is : " + a*a);
     }
 }

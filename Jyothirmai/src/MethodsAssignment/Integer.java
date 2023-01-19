@@ -8,13 +8,13 @@ public class Integer {
         obj1.printNum(85976);
     }
 }
-class member extends member1{
+class member{
     void printNum(int i){
-        System.out.println(i);
+        System.out.println("i value is : "+i);
     }
 }
 class member1{
     void printNum(int j){
-        System.out.println(j);
+        System.out.println("j value is : "+j);
     }
 }

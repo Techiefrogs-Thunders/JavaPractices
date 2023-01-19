@@ -2,12 +2,12 @@ package MethodsAssignment;
 
 public class Banks  {
     public static void main(String[] args) {
-        Bank money = new BankA();
-        Bank money1 =new BankB();
-        Bank money2=new BankC();
-        System.out.println(money.getBalance());
-        System.out.println(money1.getBalance());
-        System.out.println(money2.getBalance());
+        BankA money = new BankA();
+        BankB money1 =new BankB();
+        BankC money2=new BankC();
+        System.out.println("BankA : "+money.getBalance());
+        System.out.println("BankB : "+money1.getBalance());
+        System.out.println("BankC : "+money2.getBalance());
        
         
     }
@@ -17,19 +17,19 @@ class Bank{
         return 0;
       }
 }
-class BankA extends Bank{
+class BankA{
     int getBalance(){
         return 1000;
     }
 
 }
-class BankB extends Bank{
+class BankB{
     int getBalance(){
         return 1500;
     }
 
 }
-class BankC extends Bank{
+class BankC{
     int getBalance(){
         return 2000;
     }

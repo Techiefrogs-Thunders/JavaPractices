@@ -3,22 +3,21 @@ package MethodsAssignment;
 public class PrintNumber {
     public static void main(String[] args) {
         PrintNumber meth = new PrintNumber();
-        meth.add(5, 7);
-        meth.name();
-        meth.num();
-        meth.value();
-        
+        System.out.println(meth.printn(10, 20));
+        System.out.println(meth.printn("jerhfbsryug"));
+        System.out.println(meth.printn(62354.523));
+        System.out.println(meth.printn('c'));
     }
-    void add(int a, int b){
-        System.out.println(a+b);
+    int printn(int a, int b){
+        return a+b;
     }
-    void name(){
-        System.out.println("jsdhf");
+    String printn(String name){
+        return name;
     }
-    void num(){
-        System.out.println(345.76);
+    double printn(double num){
+        return num;
     }
-    void value(){
-         System.out.println('c');
+    char printn(char ch){
+         return ch;
     }
 }

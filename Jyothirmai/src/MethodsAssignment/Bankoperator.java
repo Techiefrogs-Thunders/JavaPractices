@@ -1,34 +1,31 @@
 package MethodsAssignment;
-import java.util.*;
 
 public class Bankoperator {
     public static void main(String[] args) {
         SBI sbi = new SBI();
         ICICI icici = new ICICI();
-        Customer customer = new Customer();
-        sbi.P=10.433;
+        sbi.P=5.876;
         sbi.r=7.42;
         sbi.n= 5;
         sbi.t=7;
-        Double sbiInt = sbi.setInterestRate();
-        System.out.println("SBI interest rate is: "+sbiInt);
-        int iciciWL = icici.setWithdrawalLimit();
-        System.out.println("ICICI withdraw limit is: "+iciciWL);
-        customer.customer();
+        //System.out.println("sbi intrestrste is : "+sbi.setInterestRate());
+        System.out.println("sbi withdrawal limit is : "+sbi.setWithdrawalLimit());
+        System.out.println("icici intrestrate is : "+icici.setInterestRate());
+        System.out.println("icici withdrawal limit is : "+icici.setWithdrawalLimit());
+        //System.out.println("rbi intrest rate is : "+rbi.setInterestRate());
+        //System.out.println("rbi withdrawal limit is : "+rbi.setWithdrawalLimit());
     }
 }
 class Customer{
     void customer(){
-        Scanner sc = new Scanner(System.in);
-        sc.nextLine();
-        sc.nextLine();
-        sc.nextInt();
-        sc.close();
+        System.out.println();
     }
 
 }
 class Account {
+    String acctype = "SAVINGS";
     void account(){
+        System.out.println(acctype);
     }
 
 }
@@ -37,11 +34,9 @@ class RBI {
     double A,P,r;
     float t;
     long avg,tot,mb;
+    String acctype;
+    String branchtype;
     int setWithdrawalLimit(){
-        Scanner sc = new Scanner(System.in);
-        String acctype = sc.nextLine();
-        String branchtype = sc.nextLine();
-        sc.close();
         if(acctype=="SAVINGS" && branchtype=="METRO"){
             withlimit = 5000;
         } 
@@ -62,7 +57,7 @@ class RBI {
     }
 class SBI extends RBI{
     double setInterestRate(){
-        A = P*(1+r/n)+n*t;
+        A = (P+r)/n*t;
         return A;
     }
     long setMAB(){
