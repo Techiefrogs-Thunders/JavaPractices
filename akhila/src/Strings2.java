@@ -24,8 +24,10 @@ public class Strings2 {
     }
     public void string2(){
         StringBuilder s1=new StringBuilder();
+        System.out.println(s1.capacity());
         StringBuilder s2=new StringBuilder("Hello");
         StringBuilder s3=new StringBuilder(6);
+        System.out.println(s3.capacity());
         s2.append("java");
         System.out.println(s2);
         StringBuilder s4=new StringBuilder();
